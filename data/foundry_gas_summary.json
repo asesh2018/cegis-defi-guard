@@ -1,0 +1,43 @@
+{
+    "contract": "LiquidationGuard.sol",
+    "compiler": "Solc 0.8.24",
+    "optimizer_runs": 200,
+    "evm_target": "Paris",
+    "bytecode_metrics": {
+        "bytecode_size_bytes": 4657,
+        "eip170_limit_bytes": 24576,
+        "capacity_utilization_pct": 18.9,
+        "deployment_cost_gas": 174210,
+        "block_gas_limit_pct": 0.58
+    },
+    "execution_gas_benchmarks": {
+        "evaluateAdmissibility_overall": {
+            "min": 7100,
+            "avg": 10759,
+            "median": 10903,
+            "max": 11681,
+            "runs": 260
+        },
+        "admissible_consensus": {
+            "min": 10560,
+            "avg": 10651,
+            "median": 10560,
+            "max": 10742,
+            "runs": 2
+        },
+        "attack_suppression_defer": {
+            "min": 7100,
+            "avg": 7100,
+            "median": 7100,
+            "max": 7100,
+            "runs": 2
+        },
+        "property_fuzzing": {
+            "min": 9842,
+            "avg": 10763,
+            "median": 10903,
+            "max": 11681,
+            "runs": 256
+        }
+    }
+}

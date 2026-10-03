@@ -1,0 +1,12 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Foundry & Solc
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+
+# OS metadata
+.DS_Store

@@ -1,0 +1,47 @@
+{
+    "metadata": {
+        "timestamp": "2026-10-03 11:55:40",
+        "total_grammar_candidates": 1152,
+        "solver": "Z3 4.12+",
+        "threat_model": {
+            "K": 1,
+            "tolerance_bps": 100,
+            "threshold_T": 80000,
+            "M_star": 808
+        }
+    },
+    "phase_1_N4_topology": {
+        "result": "INFEASIBLE (UNSAT)",
+        "witness_discovered": {
+            "p_ref": 80808,
+            "prices": [
+                80001,
+                80000,
+                79999,
+                79996
+            ],
+            "interpolated_median": 79999,
+            "mad": 1,
+            "status": "UNSAFE_LIQUIDATION_AUTHORIZED"
+        },
+        "blocking_clause": "NOT(u_min <= 4 AND M_bps >= 100 AND r_min <= 3)",
+        "candidates_pruned": 576
+    },
+    "phase_2_N5_topology": {
+        "result": "FEASIBLE (SAT)",
+        "synthesized_guard": {
+            "u_min": 4,
+            "r_min": 3,
+            "M_bps": 100,
+            "Q_min": 1000000,
+            "Delta": 60
+        },
+        "verification_status": {
+            "safety_obligation": "UNSAT (Immune to false liquidations)",
+            "preservation_obligation": "UNSAT (Immune to false deferrals)"
+        }
+    },
+    "execution_summary": {
+        "total_runtime_ms": 0.83
+    }
+}
